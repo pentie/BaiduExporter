@@ -153,7 +153,8 @@ var CORE=(function(){
                 if(type == "home"){
                     if(newVersion){
                         aria2_btn.addClass("g-dropdown-button button-open").prepend($("<a>").addClass("g-button").attr("href","javascript:void(0);").append($("<span>").addClass("g-button-right").append($("<em>").addClass("icon icon-device-tool").after($("<span>").addClass("text").text("导出下载")))));
-                        $(".g-dropdown-button").eq(3).after(aria2_btn);
+                        //$(".g-dropdown-button").eq(3).after(aria2_btn);
+                        $(".middle-button-container").after(aria2_btn);
                     }else{
                         aria2_btn.addClass("icon-btn-device").append($("<span>").text("导出下载").addClass("text").before($("<span>").addClass("ico")).after($("<span>").addClass("ico-more")));
                         
